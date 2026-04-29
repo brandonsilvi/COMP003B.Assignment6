@@ -8,7 +8,7 @@ namespace COMP003B.Assignment6.Models
         
         public int MovieId { get; set; }
         
-        public Movie ActorId { get; set; }
+        public int ActorId { get; set; }
         
         public virtual Movie? Movie { get; set; }
         
