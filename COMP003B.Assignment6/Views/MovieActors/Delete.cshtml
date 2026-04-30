@@ -1,0 +1,10 @@
+@model COMP003B.Assignment6.Models.MovieActor
+
+<h2>Delete Movie Actor</h2>
+<p>Are you sure you want to delete this?</p>
+<p>@Model.Movie?.Title - @Model.Actor?.Name</p>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Delete</button>
+</form>
+<a asp-action="Index">Cancel</a>

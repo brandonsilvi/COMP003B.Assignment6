@@ -1,0 +1,18 @@
+@model COMP003B.Assignment6.Models.Actor
+
+<h2>Actor Details</h2>
+<p><strong>Name:</strong> @Model.Name</p>
+<p><strong>Nationality:</strong> @Model.Nationality</p>
+
+@if (ViewBag.Movies != null)
+{
+    <h3>Movies</h3>
+    <ul>
+        @foreach (var movie in ViewBag.Movies)
+        {
+            <li>@movie.Title (@movie.Year)</li>
+        }
+    </ul>
+}
+<a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+<a asp-action="Index">Back to List</a>

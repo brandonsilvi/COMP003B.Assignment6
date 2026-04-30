@@ -1,0 +1,16 @@
+@model COMP003B.Assignment6.Models.Actor
+
+<h2>Edit Actor</h2>
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Nationality</label>
+        <input asp-for="Nationality" />
+    </div>
+    <button type="submit">Save</button>
+</form>
+<a asp-action="Index">Back to List</a>

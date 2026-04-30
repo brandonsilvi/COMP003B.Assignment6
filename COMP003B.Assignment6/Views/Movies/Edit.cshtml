@@ -1,0 +1,20 @@
+@model COMP003B.Assignment6.Models.Movie
+
+<h2>Edit Movie</h2>
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label>Title</label>
+        <input asp-for="Title" />
+    </div>
+    <div>
+        <label>Year</label>
+        <input asp-for="Year" type="number" />
+    </div>
+    <div>
+        <label>Genre</label>
+        <input asp-for="Genre" />
+    </div>
+    <button type="submit">Save</button>
+</form>
+<a asp-action="Index">Back to List</a>
