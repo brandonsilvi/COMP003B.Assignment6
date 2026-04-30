@@ -11,6 +11,6 @@ namespace COMP003B.Assignment6.Models
         
         public string Nationality { get; set; }
 
-        public virtual ICollection<MovieActor> MovieActors { get; set; }
+        public virtual ICollection<MovieActor>? MovieActors { get; set; }
     }
 }
